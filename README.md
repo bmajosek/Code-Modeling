@@ -58,4 +58,8 @@ After evaluation, visualize the model's accuracy using the plotting functions pr
   ```python
   plot_boxplot(accuracies_kt, accuracies_py)
   ```
-  
+### 5. Tips
+If you're looking to speed up the training process of the model:
+
+- **Batch Size**: Decreasing the batch size can speed up the learning process. However, be aware that smaller batches might introduce more noise into the training process.
+- **Learning Rate**: Increasing the learning rate allows the model to make larger updates to its weights during training, which can significantly speed up convergence.
