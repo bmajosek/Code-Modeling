@@ -46,7 +46,6 @@ To evaluate the performance of your trained model, use the `evaluate_model.ipynb
   Use the generate_prompts_and_completions function to create test data from your saved code files.
   ```python
   test_files_splited = generate_prompts_and_completions(test_files)
-  python_files_splited = generate_prompts_and_completions(python_files)
   ```
 - **Run the Evaluation**:
   Execute the cells to assess the model using the generated prompts and completions. The notebook will compute accuracy metrics and generate code completions which you can review.
