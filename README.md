@@ -46,7 +46,6 @@ To evaluate the performance of your trained model, use the `evaluate_model.ipynb
   Use the generate_prompts_and_completions function to create test data from your saved code files.
   ```python
   test_files_splited = generate_prompts_and_completions(test_files)
-  python_files_splited = generate_prompts_and_completions(python_files)
   ```
 - **Run the Evaluation**:
   Execute the cells to assess the model using the generated prompts and completions. The notebook will compute accuracy metrics and generate code completions which you can review.
@@ -59,4 +58,8 @@ After evaluation, visualize the model's accuracy using the plotting functions pr
   ```python
   plot_boxplot(accuracies_kt, accuracies_py)
   ```
-  
+### 5. Tips
+If you're looking to speed up the training process of the model:
+
+- **Batch Size**: Decreasing the batch size can speed up the learning process. However, be aware that smaller batches might introduce more noise into the training process.
+- **Learning Rate**: Increasing the learning rate allows the model to make larger updates to its weights during training, which can significantly speed up convergence.
